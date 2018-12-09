@@ -85,6 +85,31 @@ A web browser is not the same thing as a search engine, though the two are often
 
 The most popular web browsers are Chrome, Firefox, Safari, Internet Explorer, and Edge.
 
+### Functions
+
+The purpose of a web browser is to fetch information resources and display them on a user's device.
+
+This process begins when the user inputs a URL, such as https://en.wikipedia.org/, into the browser. Virtually all URLs on the Web start with either http: or https: which means the browser will retrieve them with the Hypertext Transfer Protocol. In the case of https: the communication between the browser and the web server is encrypted for the purposes of security and privacy. Another URL prefix is file: which is used to display local files already stored on the user's device.
+
+Once a web page has been retrieved, the browser's rendering engine displays it on the user's device. This includes image and video formats supported by the browser.
+
+Web pages usually contain hyperlinks to other pages and resources. Each link contains a URL, and when it is clicked, the browser navigates to the new resource. Thus the process of bringing content to the user begins again.
+
+To implement all of this, modern browsers are a combination of numerous software components.
+
+### Features
+
+All major browsers allow the user to open multiple pages at the same time, either in different browser windows or in different tabs of the same window. They also support the use of extensions to add to or modify browser operation in a variety of ways.
+
+Common user interface features of browsers:
+
+- Back and forward buttons to go back to the previous - page visited or forward to the next one.
+- A refresh or reload button to reload the current page.
+- A stop button to cancel loading the page. (In some browsers, the stop button is merged with the reload button.)
+- A home button to return to the user's home page.
+- An address bar to input the URL of a page and display it.
+- A search bar to input terms into a search engine. (In some browsers, the search bar is merged with the address bar.)
+
 
 
 ## The anatomy of a web page
