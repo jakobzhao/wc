@@ -20,11 +20,26 @@ The Web is therefore a global set of documents, images and other resources, logi
 ## IP Addresses and Ports
 
 ### IP addresses
+
+IP Address is a unique address assigned to a computing devices such as computers, tablets and smartphones to communicate with other devices within the Internet. No device can connect to the Internet without a public IP address, and a public IP address is assigned to you by the Internet Service Provider (ISP) you are subscribing from. There are two versions of IP in use today, IPv4 (32-bit) and IPv6 (128-bit). There are two types of IP addresses: public and private. To use the Internet, you'll need a public IP address. To connect to a local area network such as your home or work network, a private IP address is suffice.
+
+
 An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. An IP address serves two principal functions: host or network interface identification and location addressing.
+
+The IP address space is managed globally by the Internet Assigned Numbers Authority (IANA), and by five regional Internet registries (RIRs) responsible in their designated territories for assignment to end users and local Internet registries, such as Internet service providers. IPv4 addresses have been distributed by IANA to the RIRs in blocks of approximately 16.8 million addresses each. Each ISP or private network administrator assigns an IP address to each device connected to its network. Such assignments may be on a static (fixed or permanent) or dynamic basis, depending on its software and practices.
 
 Internet Protocol version 4 (IPv4) defines an IP address as a 32-bit number. However, because of the growth of the Internet and the depletion of available IPv4 addresses, a new version of IP (IPv6), using 128 bits for the IP address, was developed in 1995, and standardized in December 1998. In July 2017, a final definition of the protocol was published. IPv6 deployment has been ongoing since the mid-2000s.
 
 IP addresses are usually written and displayed in human-readable notations, such as `172.16.254.1` in IPv4, and `2001:db8:0:1234:0:567:8:1` in IPv6. The size of the routing prefix of the address is designated in CIDR notation by suffixing the address with the number of significant bits, e.g., 192.168.1.15/24, which is equivalent to the historically used subnet mask 255.255.255.0.
+
+> **IP Geolocation:** is the mapping of an IP address to the geographic location of the internet from the connected device. By geographically mapping the IP address, it provides you with location information such as the country, state, city, zip code, latitude/longitude, ISP, area code, and other information.
+>
+>Your IP Location can be found using our IP Lookup tool. No IP Lookup tool is 100% accurate due to many different factors. Some of those factors include where the owner of the IP has it registered, where the agency that controls the IP is located, proxies, cellular IPs, etc. If you are in the US and the controlling agency of the IP is located in Canada, chances are the IP address lookup results will show as Canada. Showing a Canadian IP while in the northern US is very common among mobile users on the Verizon network.
+>
+> There are many different IP location databases in which you can pull from. Most vendors claim a 98% or higher accuracy. IP mapping to specific cities can sometimes vary slightly based upon the location of the nearest ISP provider's network hub.
+>
+> A geolocation finder website: https://www.iplocation.net/
+
 
 ### Ports
 
@@ -109,7 +124,6 @@ Common user interface features of browsers:
 - A home button to return to the user's home page.
 - An address bar to input the URL of a page and display it.
 - A search bar to input terms into a search engine. (In some browsers, the search bar is merged with the address bar.)
-
 
 
 ## The anatomy of a web page
