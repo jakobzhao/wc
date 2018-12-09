@@ -1,2 +1,1 @@
-# wc
-Web Cartography: Theories and Practice
+# Web Cartography: Theories and Practice
