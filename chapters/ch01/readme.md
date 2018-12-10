@@ -436,12 +436,12 @@ So, SVG is probably better for applications and apps with few items. And Canvas 
 
 - Fabric.js
 - Two.js
--
+
 **Canvas:**
 
 - EaselJS
 - Paper.js
--
+
 **SVG:**
 
 - d3
@@ -449,7 +449,7 @@ So, SVG is probably better for applications and apps with few items. And Canvas 
 - Raphaël
 - Snap.svg
 - svg.js
--
+
 **WebGL**
 
 - pixi.js
