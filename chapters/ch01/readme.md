@@ -1,6 +1,6 @@
 # Chapter 01: Introduction to the Web
 
-## Internet
+## 1.1 Internet
 
 The internet is an international network of connected computers. No company owns the internet; it is a cooperative effort governed by a system of standards and rules. The purpose of connecting computers together, of course, is to share information. There are many ways information can be
 passed between computers, including email (POP3/IMAP/SMTP), file transfer (FTP), secure shell (SSH), and many more specialized modes upon which the internet is built. These standardized methods for transferring data or documents over a network are known as protocols.
@@ -17,7 +17,7 @@ The Web is therefore a global set of documents, images and other resources, logi
 
 > **Note:** The web was born in a particle physics laboratory (CERN) in Geneva, Switzerland, in 1989. There a computer specialist named Tim Berners-Lee first proposed a system of information management that used a “hypertext” process to link related documents over a network. He and his partner, Robert Cailliau, created a prototype and released it for review. For the first several years, web pages were text-only. It’s difficult to believe that in 1992, the world had only about 50 web servers, total. The real boost to the web’s popularity came in 1992 when the first graphical browser (NCSA Mosaic) was introduced, and the web broke out of the realm of scientific research into mass media. The ongoing development of web technologies is overseen by the World Wide Web Consortium (W3C).
 
-## IP Addresses and Ports
+## 1.2 IP Addresses and Ports
 
 ### IP addresses
 
@@ -38,8 +38,7 @@ IP addresses are usually written and displayed in human-readable notations, such
 >
 > There are many different IP location databases in which you can pull from. Most vendors claim a 98% or higher accuracy. IP mapping to specific cities can sometimes vary slightly based upon the location of the nearest ISP provider's network hub.
 >
-> A geolocation finder website: https://www.iplocation.net/
-
+> Geolocation finder websites: https://www.iplocation.net/ or https://tools.keycdn.com/geo.
 
 ### Ports
 
@@ -59,7 +58,7 @@ For example, all computers accessing or requesting Quote of the Day will always 
 
 `49152 to 65536` - Dynamic or private ports; meaning that they can be used by just about anybody.
 
-## Protocols:
+## 1.3 Protocols:
 
 The Internet standards describe a framework known as the Internet protocol suite. This is a model architecture that divides methods into a layered system of protocols, originally documented in RFC 1122 and RFC 1123. The layers correspond to the environment or scope in which their services operate. At the top is the application layer, space for the application-specific networking methods used in software applications. For example, a web browser program uses the client-server application model and a specific protocol of interaction between servers and clients, while many file-sharing systems use a peer-to-peer paradigm. Below this top layer, the transport layer connects applications on different hosts with a logical channel through the network with appropriate data exchange methods.
 
@@ -92,7 +91,7 @@ Secure Shell (SSH) is a cryptographic network protocol for operating network ser
 
 SSH provides a secure channel over an unsecured network in a client–server architecture, connecting an SSH client application with an SSH server.[2] The protocol specification distinguishes between two major versions, referred to as SSH-1 and SSH-2. The standard TCP port for SSH is 22. SSH is generally used to access Unix-like operating systems, but it can also be used on Windows. Windows 10 uses OpenSSH as its default SSH client.
 
-## Browsers
+## 1.4 Browsers
 
 A web browser (commonly referred to as a browser) is a software application for accessing information on the World Wide Web. Each individual web page, image, and video is identified by a distinct URL, enabling browsers to retrieve and display them on the user's device.
 
@@ -125,8 +124,110 @@ Common user interface features of browsers:
 - An address bar to input the URL of a page and display it.
 - A search bar to input terms into a search engine. (In some browsers, the search bar is merged with the address bar.)
 
+## 1.5 URL of a web page
 
-## The anatomy of a web page
+A Uniform Resource Locator (URL), colloquially termed a web address,[1] is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. A URL is a specific type of Uniform Resource Identifier (URI),[2][3] although many people use the two terms interchangeably.[4][a] URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications.
+
+Most web browsers display the URL of a web page above the page in an address bar. A typical URL could have the form http://www.example.com/index.html, which indicates a protocol (http), a hostname (www.example.com), and a file name (index.html).
+
+Opening a local file on your computer is as simple as double-clicking it, but to open files on remote computers, like web servers, we must use URLs so that our web browser knows where to look. For example, opening the HTML file that represents the web page explained below, is done by entering it into the navigation bar at the top of the browser you're using.
+
+Uniform Resource Locators are most commonly abbreviated as URLs but they're also called website addresses when they refer to URLs that use the HTTP or HTTPS protocol.
+
+### Structure of a URL
+
+A URL can be broken down into different sections, each piece serving a specific purpose when accessing a remote file.
+
+HTTP and FTP URLs are structured the same, as protocol://hostname/fileinfo. For example, accessing an FTP file with its URL might look something like this:
+
+```URL
+FTP://servername/folder/otherfolder/programdetails.docx
+```
+
+Which, aside from having FTP instead of HTTP, looks like any other URL you might encounter out there on the web.
+
+Let's use the following URL, which is Google's announcement of a CPU flaw, as an example of an HTTP address and identify each part:
+```URL
+https://security.googleblog.com/2018/01/todays-cpu-vulnerability-what-you-need.html
+```
+
+- **https** is the protocol (like FTP is a protocol) that defines the type of server that you're communicating with.
+- **security** is the hostname used to access this specific website.
+- **googleblog** is the domain name.
+- **com** is what's referred to as the top-level domain (TLD), some others of which include .net, .org, .co.uk, etc.
+- **/2018/01/** represents the directories used to organize the webpage or file. On the web server that's holding the website files, these would be the actual folders that you'd click through to find the file that this URL is specifying.
+- **todays-cpu-vulnerability-what-you-need.html** is the actual file that the URL is pointing to. If you were trying to load an image, audio file, or another file type instead of an HTML file, then the URL would end in that file extension (like a PNG or MP3).
+- **security.googleblog.com** as a group is called the Fully Qualified Domain Name (FQDN).
+
+### URL syntax rules
+
+Only numbers, letters, and the following characters are allowed in a URL: ()!$-'_*+.
+
+Other characters must be encoded (translated to programming code) in order to be accepted in a URL.
+
+Some URLs have parameters that split the URL away from additional variables. For example, when you do a Google search for lifewire:
+
+```URL
+https://www.google.com/search?q=lifewire
+```
+
+The question mark you see is telling a certain script, hosted on Google's server, that you want to send a specific command to it in order to get custom results.
+
+The specific script that Google uses to execute searches knows that whatever follows the ?q= part of the URL should be identified as the search term, so whatever is typed at that point in the URL is used to search on Google's search engine.
+
+You can see similar behavior in the URL in this YouTube search for best cat videos:
+
+```URL
+https://www.youtube.com/results?search_query=best+cat+videos
+```
+>**Note:** Although spaces are not allowed in a URL, some websites use a + sign, which you can see in both the Google and YouTube examples. Others use the encoded equivalent of a space, which is %20.
+
+URLs that use multiple variables use one or more ampersands after the question mark. You can see the example here for an Amazon.com search for Windows 10:
+
+```URLs
+https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=windows+10
+```
+
+The first variable, url, is preceded by the question mark but the next variable, field-keywords, is preceded by an ampersand. Additional variables would also be preceded by an ampersand.
+
+Parts of a URL are case sensitive — specifically, everything after the domain name (the directories and file name). You can see this for yourself if you capitalize the word "tools" in the example URL from my site that we deconstructed above, making the end of the URL read /free-driver-updater-Tools.htm. Try to open that page here and you can see that it doesn't load because that specific file doesn't exist on the server.​
+
+### More on URLs
+
+If a URL points you to a file that your web browser can display, like a JPG image, then you don't have to actually download the file to your computer in order to see it. However, for files that aren't normally displayed in the browser, like PDF and DOCX files, and especially EXE files (and many other file types), you'll be prompted to download the file to your computer in order to use it.
+
+URLs provide an easy way for us to access a server's IP address without needing to know what the actual address is. They're like easy-to-remember names for our favorite websites. This translation from a URL to an IP address is what DNS servers are used for.
+
+Some URLs are really long and complex and are best used if you click it as a link or copy/paste it into the browser's address bar. A mistake in a URL could generate a 400-series HTTP status code error, the most common type being a 404 error.
+
+One example can be seen at 1and1.com. If you try to access a page that doesn't exist on their server (like this one), you'll get a 404 error. These types of errors are so common that you'll often find custom, often humorous, versions of them on some websites.
+
+If you're having trouble accessing a website or online file that you think should be loading normally, see How to Troubleshoot an Error in a URL for some helpful ideas on what to do next.
+
+Most URLs don't require the port name to be given. Opening google.com, for example, can be done by specifying it's port number at the end like http://www.google.com:80 but it isn't necessary. If the website were operating on port 8080 instead, you could replace the port and access the page that way.
+
+By default, FTP sites use port 21, but others may be set up on port 22 or something different. If the FTP site isn't using port 21, you have to specify which one it's using in order to access the server correctly. The same concept applies to any URL that uses a different port than what the program used to access assumes by default that it's using.
+
+**Reference:**
+
+[1] https://en.wikipedia.org/wiki/URL
+[2] https://www.lifewire.com/what-is-a-url-2626035
+
+## 1.6 The anatomy of a web page
+
+A web page (also written as webpage) is a document that is suitable for the World Wide Web and web browsers. A web browser displays a web page on a monitor or mobile device.
+
+The web page usually means what is visible, but the term may also refer to a computer file, usually written in HTML or a comparable markup language. Web browsers coordinate various web resource elements for the written web page, such as style sheets, scripts, and images, to present the web page. Typical web pages provide hypertext that includes a navigation bar or a sidebar menu linking to other web pages via hyperlinks, often referred to as links.
+
+On a network, a web browser can retrieve a web page from a remote web server. The web server may restrict access to a private network such as a corporate intranet. The web browser uses the Hypertext Transfer Protocol (HTTP) to make such requests to the web server.
+
+A static web page is delivered exactly as stored, as web content in the web server's file system. In contrast, a dynamic web page is generated by a web application, usually driven by server-side software. Dynamic web pages help the browser (the client) to enhance the web page through user input to the server.
+
+
+**References:**
+[1] https://en.wikipedia.org/wiki/Web_page
+[2]
+
 
 ## Web architecture
 
