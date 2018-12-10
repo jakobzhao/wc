@@ -211,6 +211,7 @@ By default, FTP sites use port 21, but others may be set up on port 22 or someth
 **Reference:**
 
 [1] https://en.wikipedia.org/wiki/URL
+
 [2] https://www.lifewire.com/what-is-a-url-2626035
 
 ## 1.6 The anatomy of a web page
@@ -253,7 +254,9 @@ The hidden information on web pages includes comments, metadata, charset details
 Depending on the type of information, a web page could be qualified as being static and dynamic. Static web pages contain static text files that are displayed on the screen the way they are stored on the web server. Dynamic web pages, in turn, are retrieved by the browser in accordance with the interactivity instructions set for the particular web page.
 
 **Reference:**
+
 [1] https://en.wikipedia.org/wiki/Web_page
+
 [2] https://www.ntchosting.com/encyclopedia/internet/web-page/
 
 ## Web architecture
@@ -303,7 +306,9 @@ Here are 5 benefits of separating an application into tiers:
 With 3-tier architecture, you have the ability to utilize new technologies as they become available. This ensures your product is ready to adapt; ready for the future. You have the opportunity to redesign your product or application and actually look not only to today’s needs but into the future. Stay ahead of the game and maintain a competitive advantage.
 
 **Reference:**
+
 [1] https://en.ryte.com/wiki/Web_Architecture
+
 [2] https://www.izenda.com/blog/5-benefits-3-tier-architecture/
 
 ## 1.7 Graphics on the Web
@@ -428,24 +433,34 @@ So, SVG is probably better for applications and apps with few items. And Canvas 
 ### Graphics (e.g., SVG, canvas, webgl) Tools
 
 **General:**
+
 - Fabric.js
 - Two.js
+-
 **Canvas:**
+
 - EaselJS
 - Paper.js
+-
 **SVG:**
+
 - d3
 - GraphicsJS
 - Raphaël
 - Snap.svg
 - svg.js
+-
 **WebGL**
+
 - pixi.js
 - three.js
 
 **Reference:**
 
 [1] https://www.yworks.com/blog/svg-canvas-webgl
+
 [2] https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics
+
 [3] https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
 [4] https://medium.com/@benisinca/svg-vs-canvas-92938aff799a
