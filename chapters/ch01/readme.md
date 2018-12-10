@@ -319,7 +319,6 @@ At some point in your wild-tech-y life, you had to use an animation. According t
 
 First of all, if you want a simple yet a bit complex animation, the performance of SVG or CANVAS is not that relevant, therefore, it’s a matter of preference.
 
-
 ### Canvas
 
 Canvas was added in the glorious HTML5. As we know, Canvas is restricted as it only can be manipulated through JS.
@@ -327,7 +326,6 @@ Canvas was added in the glorious HTML5. As we know, Canvas is restricted as it o
 It can be used to literally draw shapes and graphs, make ridiculously complex photo compositions, obviously, you can create animations and the best out of best you can develop live video processing and rendering.
 
 As Thor has his hammer, canvas has WebGL. WebGL (web graphic library) is a powerful JS API which can be used for rendering interactive 3D and 2D graphics and elements. The canvas element is used by the API to draw/create hardware-accelerated graphics.
-
 
 #### Basic example
 
@@ -378,6 +376,7 @@ The syntax is easy-to-read as well:
 </svg>
   ```
 The output is gonna be a search-icon like [this](data/search.svg).
+
 
 ### WebGL
 
