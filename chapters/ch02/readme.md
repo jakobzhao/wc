@@ -376,12 +376,81 @@ Mapbox uses data from tracks of its clients' users, such as Strava and RunKeeper
 
 ### Leaflet.js
 
+Leaflet is a widely used open source JavaScript library used to build web mapping applications. First released in 2011,[2] it supports most mobile and desktop platforms, supporting HTML5 and CSS3. Along with OpenLayers, and the Google Maps API, it is one of the most popular JavaScript mapping libraries and is used by major web sites such as FourSquare, Pinterest and Flickr.
 
+Leaflet allows developers without a GIS background to very easily display tiled web maps hosted on a public server, with optional tiled overlays. It can load feature data from GeoJSON files, style it and create interactive layers, such as markers with popups when clicked.
+
+It is developed by Vladimir Agafonkin, who joined Mapbox in 2013.
+
+
+Leaflet is directly comparable with OpenLayers, as both are open source, client-side only JavaScript libraries. The library as a whole is much smaller, around 7,000 lines of code compared to OpenLayers' 230,000 (as of 2015).[11] It has a smaller code footprint than OpenLayers (around 123 KB[12] vs 423 KB[13]) due partly to its modular structure. The code base is newer, and takes advantage of recent features of JavaScript, plus HTML5 and CSS3. However, Leaflet lacks features OpenLayers supports, such as Web Feature Service (WFS)[14] and native support for projections other than Google Web Mercator (EPSG 3857).[15]
+
+It is also comparable to the proprietary, closed source Google Maps API (debuting in 2005) and Bing Maps API, both of which incorporate a significant server-side component to provide services such as geocoding, routing, search and integration with features such as Google Earth.[citation needed] Google Maps API provides speed and simplicity, but is not flexible, and can only be used to access Google Maps services. The new DataLayer part of Google's API does allow external data sources to be displayed, however.[16]
 
 ### JQuery
 
+jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, animation, and Ajax.[3] It is free, open-source software using the permissive MIT License.[2] Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.[4][5]
+
+jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+
+The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.[6]
+
 ### Bootstrap
+
+Bootstrap is a free and open-source front-end framework for developing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many earlier web frameworks, it concerns itself with front-end development only.
+
+
+Bootstrap 3 supports the latest versions of the Google Chrome, Firefox, Internet Explorer, Opera, and Safari (except on Windows). It additionally supports back to IE8 and the latest Firefox Extended Support Release (ESR).[12]
+
+Starting with version 3.0, Bootstrap adopted a mobile-first design philosophy, emphasizing responsive design by default.
+
+Version 4.0 added Sass and flexbox support.[9]
+
+As of Bootstrap 4, Sass is used instead of Less for the stylesheets.
+
+Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code.
+
+Grid system and responsive design comes standard with an 1170-pixel-wide grid layout. Alternatively, the developer can use a variable-width layout. For both cases, the toolkit has four variations to make use of different resolutions and types of devices: mobile phones, portrait and landscape, tablets and PCs with low and high resolution. Each variation adjusts the width of the columns.
+
+
+Bootstrap 4 stable version released on 18th Jan 2018, is a major rewrite from Bootstrap 3. Significant changes include:
+
+- Switched from Less to Sass.
+- Launched reboot in place of normalize css.
+- Dropped IE8, IE9, and iOS 6 support.
+- Added flexbox support and then dropped non-flexbox support.
+- Added navigation customization options.
+- Added responsive spacing and sizing utilities.
+- Switched from pixels to root ems.
+- Increased global font-size from 14px to 16px.
+- Dropped the panel, thumbnail, and well components in favor of cards.
+- Dropped the Glyphicons icon font.
+- Dropped the pager component.
+- Added huge number of utility classes.
+- Improved form styling.
+- Improved buttons and dropdowns.
+- Improved media objects and image classes.
+- Rewrote almost all components, jQuery plugins and documentation.
 
 ### Chroma.js
 
+Chroma.js is a small library which can be a big help with manipulating colors, so let’s see how to get started using it.
+
+Chroma color scales are designed to be delightful. You define two colors, and chroma-js finds the most pleasant path between them.
+
+The quickest way to get some pretty colors going is to define an ordinal scale like this. Choose start and end points, say you want 6 colors, and pick the `lch` mode.
+
+I’m not sure what `lch` mode means, but it creates nicer colors than the default `rgb` mode. They come out brighter.
+
+Here are a couple of things chroma.js can do for you:
+
+- read colors from a wide range of formats
+- analyze and manipulate colors
+- convert colors into wide range of formats
+- linear and bezier interpolation in different color spaces
+
 ### Storymap.js
+
+Storymap.js is a javascript library for storytelling with web maps. This library aims to enable individuals to effectively create story map applications over the Internet. Three major tasks would be dealt with, including web interface design, map design and storytelling structure. To develop these functions, this library is written in a combination of several web programming languages, like HTML, Cascading Style Sheets (CSS) and Javascript, and builds upon several prerequisite libraries and web services. To make the story map library robust and lightweight, we select as fewer prerequisite libraries as possible, and prioritize the use of open source or free libraries. This library is currently maintained by Cartography and Geovisualization Group at Oregon State University, and has been used in multiple geovisualization related courses (e.g., GEOG 371: Web Mapping, GEOG 472/572: Geovisual Analytics) and projects.
+
+A storymap is organically integrated by several scenes. Each scene consists of a web map and a script. You can manipulate the map by zooming, panning, and even adding more thematic layers. This library embodies the concept responsive web design, meaning the storymaps can be shown on either Desktop or mobile devices.
