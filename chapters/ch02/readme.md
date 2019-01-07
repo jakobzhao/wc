@@ -235,9 +235,9 @@ Unlike popular non-distributed predecessors, such as Subversion and CVS, Git onl
 Also unlike the monolithic design of Subversion and CVS, Git follows the typical Unix philosophy with a great many small components that do single atomic tasks. Of course, only a few of the dozens of separate commands are often used. Most commands are for specialized actions, and a good portion are designed to be called by shell scripts rather than users.
 
 
-Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.[12] Its current maintainer since 2005 is Junio Hamano.
+Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. Its current maintainer since 2005 is Junio Hamano.
 
-Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."[23][24] The man page describes Git as "the stupid content tracker".[25] The readme file of the source code elaborates further:
+Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'." The man page describes Git as "the stupid content tracker". The readme file of the source code elaborates further:
 
 ```
 The name "git" was given by Linus Torvalds when he wrote the very
